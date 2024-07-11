@@ -32,14 +32,17 @@ Before you begin, ensure you have met the following requirements:
    
    git clone https://github.com/imsonugupta01/To-Do-app.git
    
-2.Open the project folder
+2.Open the project folder:
+
    cd my-todo-app
    
-2.Install Dependency 
+2.Install Dependency:
+
    npm install react-scripts --save
 
 3.Start the application:
-    npm start
+
+   npm start
 
 
 4.Open http://localhost:3000 to view it in the browser.
