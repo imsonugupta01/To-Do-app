@@ -25,12 +25,12 @@ const TaskList = () => {
     <ul className="list-group">
       {tasks.map((task) => (
         <li key={task.id} className={`list-group-item d-flex justify-content-between align-items-center ${task.completed ? 'completed' : ''}`}>
-          <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+          <span style={{ textDecoration: task.completed ? '' : 'none' }}>
             {task.name}
           </span>
           <div>
             <button className="btn btn-success me-2" onClick={() => handleToggle(task.id)}>
-              {task.completed ? 'Undo' : 'Complete'}
+              {task.completed ? 'Completed' : 'Not Complete'}
             </button>
             <button className="btn btn-secondary me-2" onClick={() => handleEdit(task.id)}>Edit</button>
             <button className="btn btn-danger" onClick={() => handleDelete(task.id)}>Delete</button>
